@@ -7,13 +7,15 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         
         const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
         const email = document.getElementById('email').value;
         const message = document.getElementById('message').value;
         
         if (name && email && message) {
-            console.log('Nombre:', name);
+            console.log('Name:', name);
+            console.log('Phone:', phone);
             console.log('Email:', email);
-            console.log('Mensaje:', message);
+            console.log('Message:', message);
             alert('Mensaje enviado exitosamente.');
             contactForm.reset();
         } else {
