@@ -48,11 +48,11 @@ header img{
   margin-top: 1,5%;
 }
 
-.enlaces a {
+.enlaces a{
   color: black;
 }
 
-.get {
+.get{
   display: grid;
   grid-template-columns: 25% 50%;
 }
@@ -64,8 +64,138 @@ header img{
   margin-left: 70%;
 }
 
-/*fuentes*/
+.get input[type="button"]{
+  font-family: 'Montserrat', sans-serif;
+  width: 77%;
+  height: 28px;
+  margin-top: 4%;
+  justify-self: end;
+  background-color: #fc5d35;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
 
+/*welcome*/
+.welcome{
+  width: 100%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #f7f7f7;
+}
+
+.text-welcome{
+  width: 100%;
+  height: 400px;
+  display: grid;
+  grid-template-rows: 200px 160px 50 px;
+}
+
+.text-welcome h1{
+  display: grid;
+  color: black;
+  font-size: 55px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  margin: 0;
+  justify-items: center;
+  margin-top: 8%;
+  margin-left: -4%;
+}
+
+.text-welcome p{
+  display: grid;
+  color: black;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0;
+  justify-items: center;
+  margin-left: 23%;
+  margin-top: 2%;
+  width: 80%;
+}
+
+.welcome-image{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.welcome-image img{
+  width: 60%;
+  height: auto;
+}
+
+.buttons{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 25%;
+  margin-left: 17.5%;
+}
+
+.buttons a{
+  width: 90%;
+  height: 40px;
+  display: grid;
+  justify-self: center;
+  color: white;
+  margin-left: 35%;
+  font-size: 18px;
+  font-weight: 500;
+  align-items: center;
+}
+
+.buttons .shop{
+  background-color: #fc5d35;
+  border: none;
+  justify-content: center;
+}
+
+.buttons .contact{
+  background-color: black;
+  border: none;
+  justify-content: center;
+}
+
+/*servicios*/
+.services{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: 100px 600px 50px;
+  margin: 0;
+}
+
+.title-services{
+  width: 100%;
+  height: auto;
+  display: grid;
+}
+
+.title-services h2{
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: 5%;
+}
+
+.title-services label{
+  font-size: 17px;
+  text-align: center;
+  align-items: center;
+  color: black;
+  margin-top: 1%;
+}
+
+.our-services{
+  
+}
+
+/*fuentes*/
 .roboto-thin {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
