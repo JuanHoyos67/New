@@ -28,16 +28,21 @@ header img{
 
 .logo{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 160px 100px;
 }
 
-.titulo{
+header .hamburguer-menu{
+  display: none;
+}
+
+header .titulo{
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 20px;
   margin-top: 8%;
   margin-left: 8%;
+  grid-template-columns: 1fr 1fr;
 }
 
 .enlaces{
@@ -45,6 +50,7 @@ header img{
   display: grid;
   grid-template-columns: repeat(4, 120px);
   text-align: right;
+  justify-content: right;
   margin-top: 1,5%;
 }
 
@@ -485,13 +491,180 @@ header img{
 
 footer{
   width: 100%;
-  height: 70px;
+  height: 170px;
   display: grid;
+  grid-template-rows: 70px 80px;
   background-color: #f7f7f7;
   align-items: center;
   text-align: center;
-  margin-top: 6%;
+  margin-top: 10%;
+  padding: 20px 0px;
 }
+
+footer .redes{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+.redes .apps{
+  width: 10%;
+  height: auto;
+  margin: 0;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.redes .apps label{
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/*responsive*/
+@media only screen and (max-width: 768px){
+  
+  header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+  }
+
+  header .logo{
+    position: static;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 90px;
+  }
+
+  header .hamburguer-menu{
+    display: block;
+    width: 100%;
+    margin-left: 50%;
+  }
+
+  .enlaces{
+    width: 100%;
+    margin: 0;
+    position: static;
+    display: none;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .enlaces a{
+    padding: 10px 0;
+  }
+  
+  .get{
+    width: 100%;
+    margin: 0;
+    position: static;
+    display: none;
+    text-align: center;
+  }
+
+  header .enlaces.show-enlaces{
+    display: grid;
+  }
+
+  header .get.show-search{
+    display: grid;
+  }
+  
+  header img{
+    display: flex;
+    justify-self: start;
+    margin-left: 20%;
+  }
+
+  .logo label{
+    display: flex;
+    justify-self: left;
+    margin-top: 10%;
+  }
+
+  .get input[type="button"]{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    width: 77%;
+    height: 28px;
+    margin-top: 4%;
+    justify-self: end;
+    background-color: #fc5d35;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .welcome{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: 650px;
+  }
+
+  .text-welcome{
+    margin: 0 auto;
+  }
+
+  .text-welcome h1{
+    font-size: 40px;
+    justify-self: center;
+    align-items: center;
+  }
+
+  .text-welcome p{
+    margin-left: 0;
+    font-size: 15px;
+    text-align: center;
+    padding: 0 60px;
+  }
+
+  .welcome-image img{
+    width: 80%;
+    margin-top: -10%;
+  }
+
+  .buttons {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px auto;
+    width: 75%;
+  }
+
+  .services{
+    width: 100%;
+    height: auto;
+    
+  }
+
+  .services .title-services h2{
+    display: grid;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .services .title-services label{
+    display: grid;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .our-services{
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20%;
+  }
+
+
+}
+
+
 
 /*fuentes*/
 .roboto-thin {

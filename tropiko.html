@@ -18,6 +18,10 @@
             <label class="titulo">TROPIKO</label>
         </div>
 
+        <div class="hamburguer-menu" onclick="toggleMenu(); toggleMenu2();">
+            <img src="images/menu.png">
+        </div>
+
         <div class="enlaces">
             <a href="#">Home</a>
             <a href="#">Fruits</a>
@@ -168,8 +172,38 @@
 
     <footer>
         <label>Copyright &copy; 2019 All Rights Reserved By Free HTML Templates</label>
+
+        <div class="redes">
+            <div class="apps">
+                <a href="#"><img src="images/fb.png"></a>
+                <label>Facebook</label>
+            </div>
+            <div class="apps">
+                <a href="#"><img src="images/instagram.png"></a>
+                <label>Instagram</label>
+            </div>
+            <div class="apps">
+                <a href="#"><img src="images/twitter.png"></a>
+                <label>Twitter</label>
+            </div>
+            <div class="apps">
+                <a href="#"><img src="images/linkedin.png"></a>
+                <label>Linkedin</label>
+            </div>
+        </div>
     </footer>
 
+<script type="text/javascript">
+    function toggleMenu(){
+        const enlaces = document.querySelector('header .enlaces');
+        enlaces.classList.toggle('show-enlaces');
+    }
+
+    function toggleMenu2(){
+        const search = document.querySelector('header .get');
+        search.classList.toggle('show-search');
+    }
+</script>
     
 </body>
 </html>
