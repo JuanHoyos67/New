@@ -114,6 +114,8 @@ header img{
   margin-left: 23%;
   margin-top: 2%;
   width: 80%;
+  text-align: justify;
+  line-height: 1.5;
 }
 
 .welcome-image{
@@ -141,7 +143,6 @@ header img{
   justify-self: center;
   color: white;
   margin-left: 35%;
-  font-size: 18px;
   font-weight: 500;
   align-items: center;
 }
@@ -163,7 +164,7 @@ header img{
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-rows: 100px 600px 50px;
+  grid-template-rows: 100px 600px 120px;
   margin: 0;
 }
 
@@ -230,7 +231,7 @@ header img{
 .fruits p{
   color: black;
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 200;
   margin-top: 10%;
   line-height: 1.5;
@@ -238,20 +239,258 @@ header img{
 
 .button-service{
   width: 100%;
-  height: auto;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .button-service a{
-  width: 30%;
+  width: 10%;
   height: 40px;
   display: grid;
   justify-self: center;
   color: white;
   background-color: black;
-  font-size: 18px;
   font-weight: 500;
   align-items: center;
+  text-align: center;
+}
+
+/*tienda de frutas*/
+.shop-fruits{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: 150px repeat(3, 300px) 600px;
+  margin: 0;
+}
+
+.title-shop{
+  width: 100%;
+  height: auto;
+  display: grid;
+  margin: 0;
+}
+
+.title-shop h2{
+  color: black;
+  text-align: center;
+  justify-self: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.title-shop label{
+  color: black;
+  text-align: center;
+  justify-self: center;
+  align-items: center;
+  margin-top: -3%;
+}
+
+.our-shop{
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 63% 20%;
+  gap: 10%;
+  justify-self: center;
+  align-items: center;
+}
+
+.shop-text{
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.shop-text h3{
+  display: grid;
+  font-weight: 500;
+  font-size: 25px;
+  color: black;
+}
+
+.shop-text p{
+  color: black;
+  margin-top: 3%;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.button-shop{
+  width: 100%;
+  height: auto;
+  display: grid;
+  margin: 0;
+}
+
+.button-shop a{
+  display: grid;
+  width: 20%;
+  height: 40px;
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.shop-img{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: grid;
+}
+
+.shop-img img{
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+  justify-self: end;
+}
+
+.shop-img .grapes{
+  width: 45%;
+  height: 200px;
+  margin-top: 6%;
+  margin-left: 9%;
+  justify-self: center;
+}
+
+.image-shop{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: grid;
+}
+
+.image-shop img{
+  width: 100%;
+  height: 500px;
+  margin: o auto;
+}
+
+.image-shop label{
+  display: grid;
+  position: absolute;
+  font-size: 115px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  justify-self: center;
+  margin-top: 13%;
+}
+
+.contact-us{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin: 0;
+  margin-top: -4%;
+}
+
+.contact-us .form-contact{
+  width: 100%;
+  padding: 20px;
+  margin-left: 14%;
+}
+
+.contact-us .form-contact h2{
+  font-size: 35px;
+  font-weight: 800;
+  color: black;
+}
+
+.contact-us form{
+  display: grid;
+  width: 75%;
+  height: auto;
+  margin: 0;
+  margin-top: 5%;
+}
+
+.contact-us .form-group{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contact-us .form-group input,
+.contact-us .form-group textarea{
+  width: 100%;
+  padding: 10px 10px 10px 0;
+  border: none;
+  border-bottom: 2px solid #000;
+  background: white;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.2s ease-out;
+  color: black;
+}
+
+.contact-us .form-group input:focus,
+.contact-us .form-group textarea:focus{
+  border-bottom-color: #fc5d35;
+}
+
+.contact-us .form-group input:focus + label,
+.contact-us .form-group textarea:focus + label,
+.contact-us .form-group input:not(:placeholder-shown) + label,
+.contact-us .form-group textarea:not(:placeholder-shown) + label{
+  top: -10px;
+  left: 0;
+  font-size: 12px;
+  color: #fc5d35;
+}
+
+.contact-us .form-group label{
+  position: absolute;
+  top: 10%;
+  left: 0;
+  font-size: 16px;
+  color: #999;
+  transition: all 0.2s ease-out;
+  pointer-events: none;
+}
+
+.contact-us input[type="submit"]{
+  width: 20%;
+  height: 40px;
+  background-color: #fc5d35;
+  color: white;
+  border: none;
+  margin-top: 3%;
+  cursor: pointer;
+}
+
+.contact-us input[type="submit"]:hover{
+  background-color: #f19179;
+  color: black;
+}
+
+.contact-us .contact-image{
+  display: grid;
+  justify-self: end;
+  align-items: center;
+}
+
+.contact-us .contact-image img{
+  width: 100%;
+  height: 400px;
+  margin-top: 40%;
+}
+
+footer{
+  width: 100%;
+  height: 70px;
+  display: grid;
+  background-color: #f7f7f7;
+  align-items: center;
+  text-align: center;
+  margin-top: 6%;
 }
 
 /*fuentes*/
